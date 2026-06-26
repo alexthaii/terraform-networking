@@ -33,3 +33,9 @@ output "subnet_id" {
   value       = aws_subnet.main.id
   description = "ID of the main subnet"
 }
+
+tags = {
+  name    = "Orbit Labs VPC"
+  project = "Orbit-labs"
+  owner   = "Saturnhead"
+}
