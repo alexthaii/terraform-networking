@@ -16,6 +16,7 @@ resource "aws_vpc" "main" {
   tags = {
     name    = "Orbit Labs VPC"
     project = "Orbit-labs"
+    owner   = "Saturnhead"
   }
 }
 
@@ -34,8 +35,3 @@ output "subnet_id" {
   description = "ID of the main subnet"
 }
 
-tags = {
-  name    = "Orbit Labs VPC"
-  project = "Orbit-labs"
-  owner   = "Saturnhead"
-}
